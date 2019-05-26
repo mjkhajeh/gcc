@@ -110,11 +110,3 @@ function add_custom_tab( $tabs ) {
 
 #### gcc_tabs_slug - An array of tabs slug
 Before use this filter you should add tab with 'gcc_tabs_name'
-```php
-<?php
-add_filter( 'gcc_tabs_names', 'add_custom_tab' );
-function add_custom_tab( $tabs ) {
-  $tabs[] = 'My Tab';
-  return $tabs;
-}
-```
