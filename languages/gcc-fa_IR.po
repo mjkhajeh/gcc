@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Group category creator\n"
+"POT-Creation-Date: 2019-01-31 01:07+0330\n"
+"PO-Revision-Date: 2019-01-31 01:08+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: init.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: admin/menu.php:23 admin/menu.php:24
+msgid "Group category creator"
+msgstr "ساخت گروهی دسته بندی"
+
+#: admin/menu.php:81
+msgid "All categories added."
+msgstr "همه دسته بندی ها اضافه شدند."
+
+#: admin/menu.php:90
+msgid "Add categories"
+msgstr "افزودن دسته بندی ها"
+
+#: admin/menu.php:93
+msgid "WordPress"
+msgstr "وردپرس"
+
+#: admin/menu.php:95
+msgid "Easy Digital Downloads"
+msgstr "دانلودها(EDD)"
+
+#: admin/menu.php:98
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: admin/menu.php:106
+msgid "Names"
+msgstr "اسامی"
+
+#: admin/menu.php:108 admin/menu.php:114
+msgid "Enter in each line for a category."
+msgstr "هر دسته بندی را در خط جداگانه وارد کنید."
+
+#: admin/menu.php:112
+msgid "Slugs"
+msgstr "نامک ها"
+
+#: admin/menu.php:115
+msgid "If you do not enter for any item, slug will be the name"
+msgstr ""
+"اگر نامکی برای هر کدام از آیتم ها وارد نکنید، نامک همان نام خواهد بود"
+
+#: admin/menu.php:121
+msgid "Parent"
+msgstr "مادر"
+
+#: admin/menu.php:130
+msgid "None"
+msgstr "هیچکدام"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://zantium.ir"
+msgstr "http://zantium.ir"
+
+#. Description of the plugin/theme
+msgid "Now you can create your count of categories with one click."
+msgstr ""
+"با این افزونه می توانید تعداد زیادی دسته بندی را در وردپرس، EDD یا ووکامرس "
+"با یک کلیک وارد کنید."
+
+#. Author of the plugin/theme
+msgid "Mohammad Jafar Khajeh"
+msgstr "محمدجعفر خواجه"
+
+#, fuzzy
+#~| msgid "http://zantium.ir"
+#~ msgid "https://zantium.ir"
+#~ msgstr "http://zantium.ir"
