@@ -18,7 +18,7 @@ GCC uses i18n, So you can translate it for your language.
 <?php
 add_action( 'gcc_before_tabs', 'before_tabs_function' );
 function before_tabs_function() {
-  echo 'Please select your post type';
+	echo 'Please select your post type';
 }
 
 ```
@@ -28,7 +28,7 @@ function before_tabs_function() {
 <?php
 add_action( 'gcc_before_form', 'before_form_function' );
 function before_form_function() {
-  echo 'Please write your categories';
+	echo 'Please write your categories';
 }
 
 ```
@@ -38,7 +38,7 @@ function before_form_function() {
 <?php
 add_action( 'gcc_start_form', 'start_form_function' );
 function start_form_function() {
-  echo 'Everything you need!';
+	echo 'Everything you need!';
 }
 
 ```
@@ -49,13 +49,13 @@ For this action you need table tags( tr & td )
 <?php
 add_action( 'gcc_form', 'form_function' );
 function form_function() {
-  ?>
-  <tr>
-    <td>
-       <!-- Your inputs or other things --> 
-      </td>
-  </tr>
-  <?php
+	?>
+	<tr>
+		<td>
+			 <!-- Your inputs or other things --> 
+			</td>
+	</tr>
+	<?php
 }
 
 ```
@@ -66,12 +66,12 @@ For this action you need table tags( tr & td )
 <?php
 add_action( 'gcc_before_parent', 'before_parent_function' );
 function before_parent_function() {
-  ?>
-  <tr>
-    <td>
-       <!-- Your inputs or other things --> 
-      </td>
-  </tr>
+	?>
+	<tr>
+		<td>
+			 <!-- Your inputs or other things --> 
+			</td>
+	</tr>
 }
 
 ```
@@ -81,7 +81,7 @@ function before_parent_function() {
 <?php
 add_action( 'gcc_end_form', 'end_form_function' );
 function end_form_function() {
-  echo "<p>Now you can click on 'Save Changes' to create this categories</p>";
+	echo "<p>Now you can click on 'Save Changes' to create this categories</p>";
 }
 ```
 
@@ -90,7 +90,7 @@ function end_form_function() {
 <?php
 add_action( 'gcc_after_form', 'after_form_function' );
 function after_form_function() {
-  echo "<p>Made by: Mohammad Jafar Khajeh</p>";
+	echo "<p>Made by: Mohammad Jafar Khajeh</p>";
 }
 ```
 
@@ -103,10 +103,44 @@ With this filter you can add or remove a tab.
 <?php
 add_filter( 'gcc_tabs_name', 'add_custom_tab' );
 function add_custom_tab( $tabs ) {
-  $tabs[] = 'My Tab';
-  return $tabs;
+	$tabs[] = 'My Tab';
+	return $tabs;
 }
 ```
 
 #### gcc_tabs_slug - An array of tabs slug
 Before use this filter you should add tab with 'gcc_tabs_name'
+```php
+add_filter( 'gcc_tabs_slug', 'add_custom_tab_slug', 10, 2 );
+function ( $tab_slug, $tab_name ) {
+	if( $tab_name == 'My Tab' ) {
+		$tab_slug[] = 'my-slug';
+	}
+	return $tab_slug;
+}
+```
+
+#### gcc_default_active_tab - Choose default active tab
+```php
+<?php
+add_filter( 'gcc_default_active_tab', 'default_tab' );
+function default_tab( $active_tab ) {
+	$active_tab = 'my-slug'; // Place the slug name
+	return $active_tab;
+}
+```
+
+#### gcc_taxonomies - An array of taxonomies
+```php
+<?php
+add_filter( 'gcc_taxonomies', 'taxonomies', 10, 2 );
+function taxonomies( $taxonomies, $tab_name ) {
+	if( $tab_name == 'My Tab' ) {
+		$taxonomies[] = 'my_tax';
+	}
+	return $taxonomies;
+}
+```
+
+#### taxonomy_parent_dropdown_args - This filter is one of wordpress core filters.
+You can find it how you can use it.
