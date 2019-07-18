@@ -75,8 +75,8 @@ class gcc_menu {
 			} elseif( $tab_name == __( "WooCommerce", 'gcc' ) ) {
 				$taxonomies[]	= "product_cat";
 			}
-			$taxonomies = apply_filters( 'gcc_taxonomies', $taxonomies, $tab_name );
 		}
+		$taxonomies = apply_filters( 'gcc_taxonomies', $taxonomies );
 		
 		$taxonomy = '';
 		foreach( $tab_slug as $index => $slug ) {
@@ -96,12 +96,16 @@ class gcc_menu {
 			
 			// Create a sorted array for categories & category slugs will be added
 			$cats = array();
-			foreach( $names as  $index => $name ) {
+			$index = 0;
+			foreach( $names as $name ) {
 				if ( !$nicnames[$index] ) {
 					$nicnames[$index] = $name;
 				}
 				$cats[$name] = $nicnames[$index];
+				$index++;
 			}
+			
+			$cats = apply_filters( 'gcc_cats', $cats );
 			
 			// Start insert categories
 			foreach( $cats as $name => $nicname ) {
