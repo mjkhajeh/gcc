@@ -142,5 +142,5 @@ function taxonomies( $taxonomies, $tab_name ) {
 }
 ```
 
-#### taxonomy_parent_dropdown_args - This filter is one of wordpress core filters.
+#### taxonomy_parent_dropdown_args - This filter is a wordpress core filters.
 You can find it how you can use it.
