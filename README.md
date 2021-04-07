@@ -9,6 +9,14 @@ GCC is a modular plugin. You can use filter and actions to improve it for your n
 
 GCC uses i18n, So you can translate it for your language.
 
+#### Plugin in wordpress core
+[See 'Group category creator' in wordpress.org](https://wordpress.org/plugins/group-category-creator)
+
+#### Group category creator users
+- [TasteWP](https://tastewp.com/)
+
+If you are using 'Group category creator' please contact me to add you to this list. :)
+
 ## Plugin APIs
 
 ### Actions
