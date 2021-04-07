@@ -1,22 +1,17 @@
 <?php
-
+namespace mjgcc\Backend;
 // This class will create HTML page in wp_admin and insert all category name and slugs entered in fields.
 
 class gcc_menu {
-	/**
-	 * Creates or returns an instance of this class.
-	 *
-	 * @return	A single instance of this class.
-	 */
 	public static function get_instance() {
 		static $instance = null;
-		if($instance === null){
+		if( $instance === null ) {
 			$instance = new self;
 		}
 		return $instance;
 	}
 	
-	public function __construct() {
+	private function __construct() {
 		add_action( 'admin_menu', array( $this, 'register_menu' ) );
 	}
 	
@@ -55,8 +50,8 @@ class gcc_menu {
 			} elseif( $tab_name == __( "WooCommerce", 'gcc' ) ) {
 				$tab_slug[]	= "woo";
 			}
-			$tab_slug = apply_filters( 'gcc_tabs_slug', $tab_slug, $tab_name );
 		}
+		$tab_slug = apply_filters( 'gcc_tabs_slug', $tab_slug, $tab_name );
 		
 		// Default active tab
 		$active_tab = 'wordpress';
@@ -76,7 +71,7 @@ class gcc_menu {
 				$taxonomies[]	= "product_cat";
 			}
 		}
-		$taxonomies = apply_filters( 'gcc_taxonomies', $taxonomies );
+		$taxonomies = apply_filters( 'gcc_taxonomies', $taxonomies, $tab_name );
 		
 		$taxonomy = '';
 		foreach( $tab_slug as $index => $slug ) {
@@ -90,26 +85,22 @@ class gcc_menu {
 		if ( !empty( $_POST['gcc_names'] ) ) {
 			// Convert to array
 			$names = explode( PHP_EOL, $_POST['gcc_names'] );
-			$nicnames = explode( PHP_EOL, $_POST['gcc_nicnames'] );
+			$nicknames = explode( PHP_EOL, $_POST['gcc_nicknames'] );
 			
 			$parent = $_POST['gcc_parent'];
 			
 			// Create a sorted array for categories & category slugs will be added
 			$cats = array();
-			$index = 0;
-			foreach( $names as $name ) {
-				if ( !$nicnames[$index] ) {
-					$nicnames[$index] = $name;
+			foreach( $names as  $index => $name ) {
+				if ( !$nicknames[$index] ) {
+					$nicknames[$index] = $name;
 				}
-				$cats[$name] = $nicnames[$index];
-				$index++;
+				$cats[$name] = $nicknames[$index];
 			}
 			
-			$cats = apply_filters( 'gcc_cats', $cats );
-			
 			// Start insert categories
-			foreach( $cats as $name => $nicname ) {
-				$id = wp_insert_term( $name, $taxonomy, array( 'slug'=>$nicname, 'parent'=>$parent ) );
+			foreach( $cats as $name => $nickname ) {
+				$id = wp_insert_term( $name, $taxonomy, array( 'slug'=>$nickname, 'parent'=>$parent ) );
 				if ( is_wp_error($id) ) {
 					$error = true;
 					?>
@@ -162,8 +153,8 @@ class gcc_menu {
 							</td>
 							
 							<td>
-								<label for="gcc_nicnames"><?php _e( 'Slugs', 'gcc' ); ?></label>
-								<textarea name="gcc_nicnames" style="width: 100%;" rows="20"></textarea>
+								<label for="gcc_nicknames"><?php _e( 'Slugs', 'gcc' ); ?></label>
+								<textarea name="gcc_nicknames" style="width: 100%;" rows="20"></textarea>
 								<p><?php _e( 'Enter in each line for a category.', 'gcc' ); ?></p>
 								<p><?php _e( 'If you do not enter for any item, slug will be the name', 'gcc' ); ?></p>
 							</td>
@@ -202,5 +193,4 @@ class gcc_menu {
 		<?php
 	}
 }
-// Engage class
 gcc_menu::get_instance();

@@ -3,15 +3,15 @@
 Plugin Name: Group category creator
 Plugin URI: https://wordpress.org/plugins/group-category-creator
 Description: Now you can create multi categories in one second with one click.
-Version: 1.0.0.0
-Author: Mohammad Jafar Khajeh
+Version: 1.1.0.1
+Author: MohammadJafar Khajeh
+Author URI: http://mjkhajeh.com
 Text Domain: gcc
-Domain Path:  /languages
+Domain Path: /languages
 */
-if (!defined('ABSPATH')) exit;
+namespace mjgcc;
 
-$first_run = false;
-if ( !class_exists( 'gcc' ) ) $first_run = true;
+if (!defined('ABSPATH')) exit;
 
 class gcc {
 	/**
@@ -21,13 +21,13 @@ class gcc {
 	 */
 	public static function get_instance() {
 		static $instance = null;
-		if($instance === null){
+		if( $instance === null ) {
 			$instance = new self;
 		}
 		return $instance;
 	}
 	
-	public function __construct() {
+	private function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'constants' ), 1 );
 		add_action( 'plugins_loaded', array( $this, 'includes' ), 1 );
 		add_action( 'plugins_loaded', array( $this, 'i18n' ), 5 );

@@ -1,0 +1,70 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Group category creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-07 22:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.7\n"
+"X-Domain: gcc"
+
+#: admin/menu.php:130
+msgid "Add categories"
+msgstr ""
+
+#: admin/menu.php:118
+msgid "All categories added."
+msgstr ""
+
+#: admin/menu.php:37 admin/menu.php:48 admin/menu.php:68
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: admin/menu.php:152 admin/menu.php:158
+msgid "Enter in each line for a category."
+msgstr ""
+
+#. Name of the plugin
+#: admin/menu.php:20 admin/menu.php:21
+msgid "Group category creator"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://mjkhajeh.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/group-category-creator"
+msgstr ""
+
+#: admin/menu.php:159
+msgid "If you do not enter for any item, slug will be the name"
+msgstr ""
+
+#. Author of the plugin
+msgid "MohammadJafar Khajeh"
+msgstr ""
+
+#: admin/menu.php:150
+msgid "Names"
+msgstr ""
+
+#. Description of the plugin
+msgid "Now you can create multi categories in one second with one click."
+msgstr ""
+
+#: admin/menu.php:156
+msgid "Slugs"
+msgstr ""
+
+#: admin/menu.php:40 admin/menu.php:50 admin/menu.php:70
+msgid "WooCommerce"
+msgstr ""
