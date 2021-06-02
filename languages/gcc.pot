@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Group category creator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 22:20+0000\n"
+"POT-Creation-Date: 2021-06-02 07:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,19 +16,23 @@ msgstr ""
 "X-Loco-Version: 2.5.0; wp-5.7\n"
 "X-Domain: gcc"
 
-#: admin/menu.php:130
+#: admin/menu.php:157
 msgid "Add categories"
 msgstr ""
 
-#: admin/menu.php:118
+#: admin/menu.php:145
 msgid "All categories added."
 msgstr ""
 
-#: admin/menu.php:37 admin/menu.php:48 admin/menu.php:68
+#: admin/menu.php:42 admin/menu.php:53
+msgid "Custom taxonomy"
+msgstr ""
+
+#: admin/menu.php:37 admin/menu.php:49 admin/menu.php:74
 msgid "Easy Digital Downloads"
 msgstr ""
 
-#: admin/menu.php:152 admin/menu.php:158
+#: admin/menu.php:195 admin/menu.php:201
 msgid "Enter in each line for a category."
 msgstr ""
 
@@ -45,7 +49,7 @@ msgstr ""
 msgid "https://wordpress.org/plugins/group-category-creator"
 msgstr ""
 
-#: admin/menu.php:159
+#: admin/menu.php:202
 msgid "If you do not enter for any item, slug will be the name"
 msgstr ""
 
@@ -53,18 +57,42 @@ msgstr ""
 msgid "MohammadJafar Khajeh"
 msgstr ""
 
-#: admin/menu.php:150
+#: admin/menu.php:193
 msgid "Names"
+msgstr ""
+
+#: admin/menu.php:220
+msgid "None"
 msgstr ""
 
 #. Description of the plugin
 msgid "Now you can create multi categories in one second with one click."
 msgstr ""
 
-#: admin/menu.php:156
+#: admin/menu.php:210
+msgid "Parent"
+msgstr ""
+
+#: admin/menu.php:183
+msgid "Select taxonomy"
+msgstr ""
+
+#: admin/menu.php:102
+msgid "Selected taxonomy is not exists"
+msgstr ""
+
+#: admin/menu.php:199
 msgid "Slugs"
 msgstr ""
 
-#: admin/menu.php:40 admin/menu.php:50 admin/menu.php:70
+#: admin/menu.php:181
+msgid "Taxonomy"
+msgstr ""
+
+#: admin/menu.php:40 admin/menu.php:51 admin/menu.php:76
 msgid "WooCommerce"
+msgstr ""
+
+#: admin/menu.php:35 admin/menu.php:47 admin/menu.php:72
+msgid "WordPress"
 msgstr ""
