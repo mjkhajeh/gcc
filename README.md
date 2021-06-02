@@ -17,6 +17,17 @@ GCC uses i18n, So you can translate it for your language.
 
 If you are using 'Group category creator' please contact me to add you to this list. :)
 
+#### Versions
+- 1.3.0.2:<br>
+Update to compatible with WP 5.7.2.<br>
+Added custom taxonomy section to create terms in custom taxonomies
+
+- 1.1.0.1:<br>
+Compatible with 5.7 & Fix bug of 'gcc_tabs_slug' and 'gcc_taxonomies' filters & namespaces added<br>
+
+- 1.0.0.0:<br>
+Everything started from here!
+
 ## Plugin APIs
 
 ### Actions
