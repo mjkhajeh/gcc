@@ -3,7 +3,7 @@
 Plugin Name: Group category creator
 Plugin URI: https://wordpress.org/plugins/group-category-creator
 Description: Now you can create multi categories in one second with one click.
-Version: 1.3.0.2
+Version: 1.4.3.8
 Author: MohammadJafar Khajeh
 Author URI: http://mjkhajeh.com
 Text Domain: gcc
@@ -42,7 +42,7 @@ class gcc {
 			define( 'GCC_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
 		if( ! defined( 'GCC_VERSION' ) )
-			define( 'GCC_VERSION', "1.3.0.2" );
+			define( 'GCC_VERSION', "1.4.3.8" );
 	}
 	
 	public function includes() {
@@ -57,7 +57,34 @@ class gcc {
 	}
 
 	public function enqueue() {
-		wp_register_script( 'gcc-scripts', GCC_URI . "assets/js/gcc.js", array(), GCC_VERSION, true );
+		wp_register_script( 'gcc', GCC_URI . "assets/js/gcc.js", array(), GCC_VERSION, true );
+		wp_register_style( 'gcc', GCC_URI . "assets/css/gcc.css", array(), GCC_VERSION );
 	}
 }
 gcc::get_instance();
+
+// Changelogs
+
+/** 1.4.3.8
+ * Add ability to specify parents in textarea to faster creating
+ * Use WordPress hook to show notices
+ * Display errors more clearly
+ * Insert categories in better way
+ * Sanitizing & Escaping variables for security
+ * Added 'gcc_ignored_custom_taxonomies' filter
+ */
+
+/** 1.3.0.2
+ * Update to compatible with WP 5.7.2.
+ * Added custom taxonomy section to create terms in custom taxonomies
+ */
+
+/** 1.1.0.1
+ * Compatible with 5.7
+ * Fix bug of 'gcc_tabs_slug' and 'gcc_taxonomies' filters
+ * namespaces added
+ */
+
+/** 1.0.0.0
+ * Everything started from here!
+ */
