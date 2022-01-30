@@ -5,7 +5,7 @@ Plugin URI: https://wordpress.org/plugins/group-category-creator
 Description: Now you can create multi categories in one second with one click.
 Version: 1.4.3.8
 Author: MohammadJafar Khajeh
-Author URI: http://mjkhajeh.com
+Author URI: https://mjkhajeh.ir
 Text Domain: gcc
 Domain Path: /languages
 */

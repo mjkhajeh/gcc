@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Group category creator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 07:42+0000\n"
+"POT-Creation-Date: 2022-01-30 20:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,40 +16,46 @@ msgstr ""
 "X-Loco-Version: 2.5.0; wp-5.7\n"
 "X-Domain: gcc"
 
-#: admin/menu.php:157
+#: admin/menu.php:224
 msgid "Add categories"
 msgstr ""
 
-#: admin/menu.php:145
+#: admin/menu.php:190
 msgid "All categories added."
 msgstr ""
 
-#: admin/menu.php:42 admin/menu.php:53
+#: admin/menu.php:88 admin/menu.php:99
 msgid "Custom taxonomy"
 msgstr ""
 
-#: admin/menu.php:37 admin/menu.php:49 admin/menu.php:74
+#: admin/menu.php:83 admin/menu.php:95 admin/menu.php:119
 msgid "Easy Digital Downloads"
 msgstr ""
 
-#: admin/menu.php:195 admin/menu.php:201
+#: admin/menu.php:266 admin/menu.php:273
 msgid "Enter in each line for a category."
 msgstr ""
 
+#: admin/menu.php:267
+msgid ""
+"For hieratically, put \"- \"(Minus and a space) before each item. Each - "
+"means deeper depth"
+msgstr ""
+
 #. Name of the plugin
-#: admin/menu.php:20 admin/menu.php:21
+#: admin/menu.php:196 admin/menu.php:197
 msgid "Group category creator"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "http://mjkhajeh.com"
+msgid "https://mjkhajeh.ir"
 msgstr ""
 
 #. URI of the plugin
 msgid "https://wordpress.org/plugins/group-category-creator"
 msgstr ""
 
-#: admin/menu.php:202
+#: admin/menu.php:274
 msgid "If you do not enter for any item, slug will be the name"
 msgstr ""
 
@@ -57,11 +63,11 @@ msgstr ""
 msgid "MohammadJafar Khajeh"
 msgstr ""
 
-#: admin/menu.php:193
+#: admin/menu.php:264
 msgid "Names"
 msgstr ""
 
-#: admin/menu.php:220
+#: admin/menu.php:292
 msgid "None"
 msgstr ""
 
@@ -69,30 +75,30 @@ msgstr ""
 msgid "Now you can create multi categories in one second with one click."
 msgstr ""
 
-#: admin/menu.php:210
+#: admin/menu.php:282
 msgid "Parent"
 msgstr ""
 
-#: admin/menu.php:183
+#: admin/menu.php:254
 msgid "Select taxonomy"
 msgstr ""
 
-#: admin/menu.php:102
+#: admin/menu.php:145
 msgid "Selected taxonomy is not exists"
 msgstr ""
 
-#: admin/menu.php:199
+#: admin/menu.php:271
 msgid "Slugs"
 msgstr ""
 
-#: admin/menu.php:181
+#: admin/menu.php:252
 msgid "Taxonomy"
 msgstr ""
 
-#: admin/menu.php:40 admin/menu.php:51 admin/menu.php:76
+#: admin/menu.php:86 admin/menu.php:97 admin/menu.php:121
 msgid "WooCommerce"
 msgstr ""
 
-#: admin/menu.php:35 admin/menu.php:47 admin/menu.php:72
+#: admin/menu.php:81 admin/menu.php:93 admin/menu.php:117
 msgid "WordPress"
 msgstr ""

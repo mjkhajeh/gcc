@@ -263,14 +263,15 @@ class Menu {
 							<td>
 								<label for="gcc_names"><?php _e( 'Names', 'gcc' ); ?></label>
 								<textarea name="gcc_names" style="width: 100%" rows="20" <?php echo empty( $current_taxonomy ) ? 'disabled' : '' ?>></textarea>
-								<p><?php _e( 'Enter in each line for a category.', 'gcc' ); ?></p>
+								<p class="description"><?php _e( 'Enter in each line for a category.', 'gcc' ); ?></p>
+								<p class="description"><?php _e( 'For hieratically, put "- "(Minus and a space) before each item. Each - means deeper depth', 'gcc' ); ?></p>
 							</td>
 							
 							<td>
 								<label for="gcc_nicknames"><?php _e( 'Slugs', 'gcc' ); ?></label>
 								<textarea name="gcc_nicknames" style="width: 100%;" rows="20" <?php echo empty( $current_taxonomy ) ? 'disabled' : '' ?>></textarea>
-								<p><?php _e( 'Enter in each line for a category.', 'gcc' ); ?></p>
-								<p><?php _e( 'If you do not enter for any item, slug will be the name', 'gcc' ); ?></p>
+								<p class="description"><?php _e( 'Enter in each line for a category.', 'gcc' ); ?></p>
+								<p class="description"><?php _e( 'If you do not enter for any item, slug will be the name', 'gcc' ); ?></p>
 							</td>
 						</tr>
 						
